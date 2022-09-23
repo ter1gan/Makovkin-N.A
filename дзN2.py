@@ -1,3 +1,4 @@
+# -- coding: utf-8 --
 import math
 x=2.444
 y=0.869*10**(-2)
