@@ -44,28 +44,28 @@ if a % 2 == 0 and b % 2 == 0:
 if a % 2 == 1 and b % 2 == 1:
     if c % 2 == 0 and d % 2 == 0:
         print('Да')
-if a % 2 == 0 and b % 2 ==1:
+if a % 2 == 0 and b % 2 == 1:
     if c % 2 == 0 and d % 2 == 0:
         print('Нет')
-if a % 2 == 1 and b % 2 ==0:
+if a % 2 == 1 and b % 2 == 0:
     if c % 2 == 0 and d % 2 == 0:
         print('Нет')
-if a % 2 == 0 and b % 2 ==0:
+if a % 2 == 0 and b % 2 == 0:
     if c % 2 == 1 and d % 2 == 0:
         print('Нет')
-if a % 2 == 0 and b % 2 ==0:
+if a % 2 == 0 and b % 2 == 0:
     if c % 2 == 0 and d % 2 == 1:
         print('Нет')
-if a % 2 == 1 and b % 2 ==0:
+if a % 2 == 1 and b % 2 == 0:
     if c % 2 == 1 and d % 2 == 1:
         print('Нет')
-if a % 2 == 0 and b % 2 ==1:
+if a % 2 == 0 and b % 2 == 1:
     if c % 2 == 1 and d % 2 == 1:
         print('Нет')
-if a % 2 == 1 and b % 2 ==1:
+if a % 2 == 1 and b % 2 == 1:
     if c % 2 == 0 and d % 2 == 1:
         print('Нет')
-if a % 2 == 1 and b % 2 ==1:
+if a % 2 == 1 and b % 2 == 1:
     if c % 2 == 1 and d % 2 == 0:
         print('Нет')
 if a % 2 == 1 and b % 2 == 0:
