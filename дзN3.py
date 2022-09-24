@@ -80,6 +80,27 @@ if a % 2 == 1 and b % 2 == 0:
 if a % 2 == 0 and b % 2 == 1:
     if c % 2 == 1 and d % 2 == 0:
         print('Да')
+year = int(input())
+if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+    print('Да')
+else:
+    print('Нет')
+x = int(input())
+y = int(input())
+z = int(input())
+if x == y != z or y == z != x or x == z != y:
+    print('2')
+elif x == y == z:
+    print('3')
+else:
+    print('0')
+n = int(input())
+m = int(input())
+k = int(input())
+if n * m <= k:
+    print('Нет')
+elif n * m > k:
+    print('Да')
 
     
 
