@@ -1,106 +1,96 @@
 "# -- coding: utf-8 --"
-x = int(input())
-y = int(input())
-z = int(input())
-print(x+y+z)
-a = int(input('первый катет a = '))
-b = int(input('второй катет b = '))
-print(1/2 * a*b)
-n = int(input('n = '))
-h = n // 60
-if h > 23:
-    h = h % 24
-elif n > 59:
-    n = n % 60
-print(h,' ',n)
-a = int(input('a = '))
-b = int(input('b = '))
-l = int(input('l = '))
-n = int(input('n = '))
-y = a+(a+b)*(n-2)+2*l
-print(y)
-a = int(input())
-b = int(input())
-c = int(input())
-if a < b and a < c:
-    print(a)
-elif b < a and b < c:
-    print(b)
-if c < a and c < b:
-    print(c)
-a = int(input('столбец 1ой '))
-b = int(input('строка 1ой '))
-c = int(input('столбец 2ой '))
-d = int(input('строка 2ой '))
-if a % 2 == 0 and b % 2 == 0:
-    if c % 2 == 0 and d % 2 == 0:    
-        print('Да')
-if a % 2 == 1 and b % 2 == 1:
-    if c % 2 == 1 and d % 2 == 1:
-        print('Да')
-if a % 2 == 0 and b % 2 == 0:
-    if c % 2 == 1 and d % 2 == 1:
-        print('Да')
-if a % 2 == 1 and b % 2 == 1:
-    if c % 2 == 0 and d % 2 == 0:
-        print('Да')
-if a % 2 == 0 and b % 2 == 1:
-    if c % 2 == 0 and d % 2 == 0:
-        print('Нет')
-if a % 2 == 1 and b % 2 == 0:
-    if c % 2 == 0 and d % 2 == 0:
-        print('Нет')
-if a % 2 == 0 and b % 2 == 0:
-    if c % 2 == 1 and d % 2 == 0:
-        print('Нет')
-if a % 2 == 0 and b % 2 == 0:
-    if c % 2 == 0 and d % 2 == 1:
-        print('Нет')
-if a % 2 == 1 and b % 2 == 0:
-    if c % 2 == 1 and d % 2 == 1:
-        print('Нет')
-if a % 2 == 0 and b % 2 == 1:
-    if c % 2 == 1 and d % 2 == 1:
-        print('Нет')
-if a % 2 == 1 and b % 2 == 1:
-    if c % 2 == 0 and d % 2 == 1:
-        print('Нет')
-if a % 2 == 1 and b % 2 == 1:
-    if c % 2 == 1 and d % 2 == 0:
-        print('Нет')
-if a % 2 == 1 and b % 2 == 0:
-    if c % 2 == 1 and d % 2 == 0:
-        print('Да')
-if a % 2 == 0 and b % 2 == 1:
-    if c % 2 == 0 and d % 2 == 1:
-        print('Да')
-if a % 2 == 1 and b % 2 == 0:
-    if c % 2 == 0 and d % 2 == 1:
-        print('Да')
-if a % 2 == 0 and b % 2 == 1:
-    if c % 2 == 1 and d % 2 == 0:
-        print('Да')
-year = int(input())
-if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
-    print('Да')
-else:
-    print('Нет')
-x = int(input())
-y = int(input())
-z = int(input())
-if x == y != z or y == z != x or x == z != y:
-    print('2')
-elif x == y == z:
-    print('3')
-else:
-    print('0')
-n = int(input())
-m = int(input())
-k = int(input())
-if n * m <= k:
-    print('Нет')
-elif n * m > k:
-    print('Да')
+def add(x,y,z):                          #1#
+    return x+y+z
+print(add(7,8,9))
+def add(a,b):                            #2#
+    return 1/2 * a*b
+print(add(5,4))
+def F(n):                                #3#
+    hours = n % (60 * 24) // 60
+    minutes = n % 60
+    print(hours, ":", minutes)
+print(F(3245233))
+def F(a, b, l, N):                       #4#
+    return a + (2*N*a) + (2*b*N) + l
+print(F(5, 3, 5, 4))
+def F(a, b, c):                          #5#
+    if a > b and c > b:
+        print(b)
+    if b > a and c > a:
+        print(a)
+    if b > c and a > c:
+        print(c)
+print(F(2,7,-1))
+def f(a,b,c,d):                          #6#
+    if a % 2 == 0 and b % 2 == 0:
+        if c % 2 == 0 and d % 2 == 0:    
+            print('Да')
+    if a % 2 == 1 and b % 2 == 1:
+        if c % 2 == 1 and d % 2 == 1:
+            print('Да')
+    if a % 2 == 0 and b % 2 == 0:
+        if c % 2 == 1 and d % 2 == 1:
+            print('Да')
+    if a % 2 == 1 and b % 2 == 1:
+        if c % 2 == 0 and d % 2 == 0:
+            print('Да')
+    if a % 2 == 0 and b % 2 ==1:
+        if c % 2 == 0 and d % 2 == 0:
+            print('Нет')
+    if a % 2 == 1 and b % 2 ==0:
+        if c % 2 == 0 and d % 2 == 0:
+            print('Нет')
+    if a % 2 == 0 and b % 2 ==0:
+        if c % 2 == 1 and d % 2 == 0:
+            print('Нет')
+    if a % 2 == 0 and b % 2 ==0:
+        if c % 2 == 0 and d % 2 == 1:
+            print('Нет')
+    if a % 2 == 1 and b % 2 ==0:
+        if c % 2 == 1 and d % 2 == 1:
+            print('Нет')
+    if a % 2 == 0 and b % 2 ==1:
+        if c % 2 == 1 and d % 2 == 1:
+            print('Нет')
+    if a % 2 == 1 and b % 2 ==1:
+        if c % 2 == 0 and d % 2 == 1:
+            print('Нет')
+    if a % 2 == 1 and b % 2 ==1:
+        if c % 2 == 1 and d % 2 == 0:
+            print('Нет')
+    if a % 2 == 1 and b % 2 == 0:
+        if c % 2 == 1 and d % 2 == 0:
+            print('Да')
+    if a % 2 == 0 and b % 2 == 1:
+        if c % 2 == 0 and d % 2 == 1:
+            print('Да')
+    if a % 2 == 1 and b % 2 == 0:
+        if c % 2 == 0 and d % 2 == 1:
+            print('Да')
+    if a % 2 == 0 and b % 2 == 1:
+        if c % 2 == 1 and d % 2 == 0:
+            print('Да')
+print(f(5,3,7,4))
+def F(x):                                    #7#
+    if x//4==0 and x//100!=0 and x//400!=0:
+        print("Да")
+    else:
+        print("Нет")        
+print(F(2000))
+def F(a, b, c):                              #8#
+    if a == b == c:
+        return 3
+    if a == b or b==c or c==a:
+        return 2
+    else:
+        return 0
+print(F(13, 13, 78))
+def F(n,m,k):                                #9#
+    if m*n//k:
+        print("Да")
+    else:
+        print("Нет")
+print(F(1,4,5))
 
     
 
