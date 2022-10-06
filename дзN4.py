@@ -24,8 +24,8 @@ for i in range(N):
     n = int(input())
     sum += n
 print(sum)
-sum = 0                   #5#
-n = int(input())
+n = int(input())          #5#         
+sum = 0
 for i in range(1, n + 1):
     sum += i ** 3
 print(sum)
