@@ -21,8 +21,7 @@ while a > b:
 N = int(input())         #4#
 sum = 0
 for i in range(N):
-    n = int(input())
-    sum += n
+    sum += int(input())
 print(sum)
 n = int(input())          #5#         
 sum = 0
@@ -35,17 +34,25 @@ for i in range(1, n + 1):
     N *= i
 print(N)
 n = int(input())          #7#
-N = 1
+Y = 1
 sum = 0
 for i in range(1, n + 1):
-    N *= i
-    sum += N
+    Y *= i
+    sum += Y
 print(sum)
 n = int(input())               #8#
 for x in range(1, n + 1):
     for y in range(1, x + 1):
         print(y, end='')
     print()
+n = int(input())                   #9#
+def F(n):
+   if n == 1 or n == 2:
+       return 1
+   else:
+       return F(n - 2) + F(n - 1) 
+print(F(n + 2) - 1)
+    
 
     
  
