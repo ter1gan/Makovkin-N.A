@@ -11,7 +11,7 @@ def F(n):                                #3#
     print(hours, ":", minutes)
 print(F(3245233))
 def F(a, b, l, n):                       #4#
-    return a + (2*n*a) + (2*b*n) + l
+    return a + 2*n*a + 2*b*n + l
 print(F(5, 3, 5, 4))
 def F(a, b, c):                          #5#
     if a > b and c > b:
