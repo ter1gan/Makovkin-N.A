@@ -46,12 +46,12 @@ for x in range(1, n + 1):
         print(y, end='')
     print()
 n = int(input())                   #9#
-def F(n):
+def add(n):
    if n == 1 or n == 2:
        return 1
    else:
-       return F(n - 2) + F(n - 1) 
-print(F(n + 2) - 1)
+       return add(n - 2) + add(n - 1) 
+print(add(n + 2) - 1)
     
 
     
