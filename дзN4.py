@@ -3,19 +3,19 @@ a=int(input())           #1#
 b=int(input())
 while a <= b:
     print(a)
-    a=a+1
+    a = a + 1
 a=int(input())           #2#
 b=int(input())
 while a < b:
-    a=a+1
+    a = a + 1
     print(a)
 while a > b:
-    a=a-1
+    a = a - 1
     print(a)
 a=int(input())           #3#
 b=int(input())
 while a > b:
-    a = a-1
+    a = a - 1
     if a % 2 == 1:
         print(a)
 N = int(input())         #4#
