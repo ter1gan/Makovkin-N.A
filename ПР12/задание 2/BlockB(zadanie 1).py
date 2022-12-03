@@ -1,10 +1,11 @@
 def F():
     x = int(input())
+    a = []
     while x != 0:
-        x =int(input())
+        x = int(input())
         if x > 0:
-            max = x          
-    return max
+            a.append(x)
+    return max(a)
 print(F())
 
 
